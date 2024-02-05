@@ -1,2 +1,3 @@
-# leetcode
-A collection of Leetcode problem solutions
+# LeetCode
+
+A collection of *LeetCode* problem solutions.
