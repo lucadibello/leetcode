@@ -12,5 +12,8 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 # Activate conda environment
 RUN echo "conda activate base" >> /root/.bashrc
 
+# Now, link node to common location
+RUN ln -s $(which node) /usr/bin/node
+
 # Clean up
 RUN apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
